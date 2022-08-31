@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const Port = process.env.Port || 8000;
+const Port = process.env.PORT || 8000;
 app.get("/" , (req,res)=>{
 return res.sendFile( __dirname+"/ashu.html");
 })
